@@ -1,0 +1,278 @@
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    width: 600px;
+    font-family: "Raleway", sans-serif;
+    color: #14371f; 
+} 
+
+img{
+    opacity: 65%;
+}
+
+h1{
+    position: absolute;
+    top: 16px;
+    left: 48px;
+    margin-top: 0;
+    font-family: "Alice", serif;
+    font-size: 60px;
+    text-shadow: 4px 2px #B7D5CC;
+}
+
+h4{
+    position: absolute;
+    top: 64px;
+    left: 48px;
+    font-size: 18px;
+    background-color: #B7D5CC;
+    padding: 2px 4px;
+}
+
+.emoji{
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+h5{
+    margin: 4px 0;
+    font-size: 20px;
+    font-family: "Alice", serif;
+    color: #a0361b;
+}
+
+.ingredients{
+    margin: 0;
+    font-size: 16px;
+    color: #c4501b;
+}
+
+.price{
+    margin: 4px 0;
+    font-size: 18px;
+    color: #a0361b;
+    font-weight: 500;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px 24px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border-bottom: 1px solid #B7D5CC;
+    padding: 16px;
+}
+
+.card-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+}
+
+
+
+.card-mid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 16px;
+}
+
+.card-end{
+    margin: 16px;
+}
+
+.add-item{
+    padding: 6px 14px 8px 14px;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    background-color: #619b8a;
+    color: white;
+    text-align: center;
+}
+
+.add-item:hover{
+    background-color: #14371f;
+}
+.add-item:active{
+    background-color: #14371f;
+    color: #619b8a;
+}
+
+.order-header{
+    text-align: center;
+    margin: 4px 0;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Alice", serif;
+    font-weight: 700;
+    
+}
+
+.order-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px 40px;
+   
+}
+
+.order{
+     background-color: #ECF5F2;
+     margin: 20px 34px;
+     border-radius: 16px;
+}
+
+.items-ordered{
+   display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.item-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.remove-container{
+   display: flex;
+    flex-direction: column; 
+    margin-top: auto;
+}
+
+.remove {
+    width:180px;
+    font-size: 12px;
+    color: #619b8a;
+    border: none;
+    background-color: #ECF5F2;
+    text-align: left;
+}
+
+.item-price{
+    margin-bottom: 8px;
+    width: 200px;
+    text-align: right;
+    margin-top: auto;
+}
+
+.order-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 38px 0 38px;
+    border-top: 1px solid #619b8a;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700; 
+}
+
+.total-price {
+    font-weight: 700; 
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+   border: none;
+    background-color: #619b8a;
+    color: white;
+    font-weight: 700;
+    width: 460px;
+    padding: 12px 0;
+    border-radius: 8px;  
+    
+}
+
+.pay{
+    width: 300px;
+    margin-top: 24px;
+ 
+}
+
+.checkout{
+    width: 460px;
+    margin: 16px; 
+}
+
+.pay-modal{
+    display: none; /*flex when displayed*/
+    position: fixed;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0 0 400px #14371f;
+}
+
+h2{
+    text-align: center;
+    font-family: "Alice", serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 0px;
+    gap: 16px;
+}
+
+input{
+    background-color:#ECF5F2;
+    border: none;
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+
+.confirm{
+    background-color: #ECF5F2;
+    margin: 20px 34px;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hidden{
+    display: none;
+}

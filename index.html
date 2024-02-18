@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- Google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <div class='header-inner'>
+            <img src="images/cactus.jpg" class='picante-img'>
+            <h1>Nopales</h1>  
+            <h4>Discover Authentic Mexican Flavor</h4>
+        </div>
+        
+    </header>
+    <main>
+       <div class='menu-container' id='menu-container'></div> 
+       <section class='order hidden' id='order'>
+           <div class='order-header' id='order-header'>Your order</div>
+            <div class='order-container' id='order-container'></div>
+            <div class='order-total' id='order-total'>
+                <p class='total' id='total'>Total price:</p>
+                <p class='total-price' id='total-price'></>
+            </div>
+            <div class='btn-container'>
+                <button class='checkout btn id='checkout' data-checkout='checkout'>Checkout</button>
+            </div>
+        </section> 
+        <section class='confirm hidden' id='confirm'></section>
+    </main>
+    <div class='pay-modal' id='pay-modal'>
+        <h2>Enter payment details</h2>
+        <form id='pay-form'>
+            <input type='text' name='customer-name' id='customer-name' placeholder="Enter your name" required>
+            <input type='tel' name='credit-card' id='credit-card' placeholder="Enter card number" pattern="[0-9\s]{13,19}" maxlength="19" inputmode="numeric" required>
+            <input type='tel' name='cvv' id='cvv' placeholder="Enter CVV" maxlength="3" inputmode="numeric" required>
+            <button type="submit" class='pay btn'>Pay</button>
+        </form>
+    </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
